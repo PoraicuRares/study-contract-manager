@@ -57,16 +57,16 @@ Requirements:
 - The **Qt VS Tools** extension for Visual Studio
 
 Steps:
-1. Clone the repository and open `lab 6-7.sln` in Visual Studio.
+1. Clone the repository and open `StudyContractManager.sln` in Visual Studio.
 2. In *Extensions → Qt VS Tools → Qt Versions*, register your Qt installation. If the version name differs from `6.11.0`, select yours in the project's Qt settings.
 3. Select the **Debug | x64** configuration and press **F5**.
 
 ## Project structure
 
 ```
-lab 6-7.sln
-lab 6-7/
-├── lab 6-7.cpp            # entry point
+StudyContractManager.sln
+StudyContractManager/
+├── main.cpp               # entry point
 ├── disciplina.*           # Course entity
 ├── contract.h             # Study contract
 ├── validatori.h           # Validation
