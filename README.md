@@ -4,10 +4,7 @@ A desktop application written in **modern C++ with Qt 6** for managing a catalog
 
 I built it during the 2nd semester of my first year at university (2026) for the Object-Oriented Programming course. The UI text is in Romanian.
 
-<!-- Screenshots: add images to a docs/ folder and uncomment the lines below
-![Main window](docs/main-window.png)
-![Study contract](docs/contract-window.png)
--->
+![All windows open at the same time, kept in sync through the Observer pattern](docs/screenshots/all-windows.png)
 
 ## Features
 
@@ -25,6 +22,18 @@ I built it during the 2nd semester of my first year at university (2026) for the
 - Add courses to the contract, or generate a random contract with *N* courses
 - Export the contract to a CSV file
 - Several windows show the contract at the same time (a list, an editable table and a drawing view) and all of them update automatically when it changes
+
+## Screenshots
+
+**Main window:** the course catalog. Courses with more than 2 hours per week are shown in red and the rest in green. Selecting a course fills in the form.
+
+![Main window](docs/screenshots/main-window.png)
+
+**Study contract views:** three windows show the same contract. When the contract changes, all of them update through the Observer pattern.
+
+| Contract list | Contract table (Qt Model/View) | Drawing view |
+|---|---|---|
+| ![Contract list](docs/screenshots/contract-window.png) | ![Contract table](docs/screenshots/contract-table.png) | ![Drawing view](docs/screenshots/contract-drawing.png) |
 
 ## Architecture and design
 
